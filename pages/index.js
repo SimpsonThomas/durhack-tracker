@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../core/navbar';
 import ModuleList from '../core/moduleList';
+import MapItem from '../core/map';
+import Leaderboard from '../core/leaderboard';
 
 export default function Home() {
   return (
@@ -20,9 +22,11 @@ export default function Home() {
           </div>
           <div className={styles.map}>
             <p>Map</p>
+            <MapItem/>
           </div>
           <div className={styles.leaderboard}>
             <p>Leaderboard</p>
+            <Leaderboard/>
           </div>
       </main>
 
