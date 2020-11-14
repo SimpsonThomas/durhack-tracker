@@ -13,3 +13,14 @@
     font-style: italic;
     text-align: center;
 }
+
+.active .mapList {
+    color: green;
+}
+
+.checkpointActive {
+    color: #53a800;
+    list-style: none;
+    font-style: italic;
+    text-align: center;
+}
