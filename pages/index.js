@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from './core/navbar';
+import Navigation from '../core/navbar';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Navigation/>
       <Head>
         <title>Durham Lecture Tracker</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/durhack.png" />
       </Head>
 
       <main className={styles.main}>
