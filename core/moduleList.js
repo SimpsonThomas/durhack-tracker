@@ -1,19 +1,22 @@
 import styles from "../styles/course.module.css"
 
-function ModuleList() {
+function ModuleList(moduleChanger, moduleSel) {
     return (
             <div className={styles.moduleDiv}>
-                {moduleButton()}
-                {moduleButton()}
+                {moduleButton(moduleChanger, moduleSel, 'Name')}
+                {moduleButton(moduleChanger, moduleSel, 'Name2')}
+                {moduleButton(moduleChanger, moduleSel, 'Name3')}
             </div>
         )
 }
 
-function moduleButton() {
+function moduleButton(moduleChanger, moduleSel, name) {
     return (
         <li className={styles.moduleButtonList}>
-            <button className={styles.moduleButton}>
-                Test
+            <button className={styles.moduleButton} onClick={() => {
+                moduleChanger(name)
+            }}>
+                {name}
             </button>
         </li>
     )

@@ -1,12 +1,18 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../core/navbar';
 import ModuleList from '../core/moduleList';
 import MapItem from '../core/map';
 import Leaderboard from '../core/leaderboard';
 
-export default function Home() {
+import React, { Component , useState } from "react";
+
+function Home() {
+  const [moduleSel, setModule] = useState(0);
+  function moduleChanger(newMod) {
+    setModule(newMod)
+  }
+  console.log(moduleSel)
   return (
     <div className={styles.container}>
       <Navigation/>
@@ -18,10 +24,11 @@ export default function Home() {
       <main className={styles.main}>
           <div className={styles.moduleList}>
             <p>Module List</p>
-            <ModuleList/>
+            {ModuleList(moduleChanger, moduleSel)}
           </div>
           <div className={styles.map}>
             <p>Map</p>
+            {moduleSel}
             <MapItem/>
           </div>
           <div className={styles.leaderboard}>
@@ -43,3 +50,6 @@ export default function Home() {
     </div>
   )
 }
+
+
+export default Home
