@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../core/navbar';
+import ModuleList from '../core/moduleList';
 
 export default function Home() {
   return (
@@ -13,7 +14,18 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
+          <div className={styles.moduleList}>
+            <p>Module List</p>
+            <ModuleList/>
+          </div>
+          <div className={styles.map}>
+            <p>Map</p>
+            <ModuleList/>
+          </div>
+          <div className={styles.leaderboard}>
+            <p>Leaderboard</p>
+            <ModuleList/>
+          </div>
       </main>
 
       <footer className={styles.footer}>
