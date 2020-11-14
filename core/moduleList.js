@@ -1,11 +1,13 @@
 import styles from "../styles/course.module.css"
+import { modules } from "./modules"
 
 function ModuleList(moduleChanger, moduleSel) {
     return (
             <div className={styles.moduleDiv}>
-                {moduleButton(moduleChanger, moduleSel, 'Name')}
-                {moduleButton(moduleChanger, moduleSel, 'Name2')}
-                {moduleButton(moduleChanger, moduleSel, 'Name3')}
+                {Object.keys(modules).map( (module) => {
+                    console.log(module)
+                    return( moduleButton(moduleChanger, moduleSel, module) )
+                })}
             </div>
         )
 }
