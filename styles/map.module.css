@@ -1,9 +1,10 @@
 .mapList {
     list-style: none;
-    padding-left: 10px;
+    padding-left: 30px;
+    text-align: center;
 }
 
 .mapLister {
     list-style: none;
-    padding-left: 10px;
+    padding-left: 20px;
 }

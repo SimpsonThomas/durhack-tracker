@@ -6,9 +6,13 @@ function MapItem(module) {
     if (module) {
     return (
         <ul className={styles.mapLister}>
-            {module}
+            <b>{module}</b>
             {modules[module].map((topic) => {
-                return(<li key={topic} className={styles.mapList}>{topic}</li>)
+                return(
+                <div key={topic}>
+                    <p  className={styles.mapList}>{topic}</p>
+                    <p>Here</p>
+                </div>)
             })}
         </ul>
     )
