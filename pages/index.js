@@ -24,7 +24,6 @@ function Home() {
             {ModuleList(setModule, moduleSel, currentUser)}
           </div>
           <div className={styles.map}>
-            <p>Map</p>
             {MapItem(moduleSel)}
           </div>
           <div className={styles.leaderboard}>

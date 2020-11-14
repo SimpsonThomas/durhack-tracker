@@ -1,6 +1,5 @@
-import styles from "../styles/course.module.css"
 import { modules } from "./modules"
-import '../styles/map.module.css'
+import styles from '../styles/map.module.css'
 
 function MapItem(module) {
     if (module) {
@@ -10,8 +9,10 @@ function MapItem(module) {
             {modules[module].map((topic) => {
                 return(
                 <div key={topic}>
-                    <p  className={styles.mapList}>{topic}</p>
-                    <p>Here</p>
+                    <p className={styles.mapList}>{topic}</p>
+                    <p className={styles.checkpoint}>Checkpoint 1</p>
+                    <p className={styles.checkpoint}>Checkpoint 2</p>
+                    <p className={styles.checkpoint}>Checkpoint 3</p>
                 </div>)
             })}
         </ul>
