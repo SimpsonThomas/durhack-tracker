@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './core/navbar';
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Navigation/>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
