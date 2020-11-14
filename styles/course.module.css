@@ -27,13 +27,24 @@
     transition: 0.75s;
   }
 
-.moduleButton:hover {
+  .moduleButtonActive {
     list-style: none;
     display: block;
     width:100%;
     padding: 5px;
-    background-color: #4245f5;
+    background-color: #8142f5;
     color: white;
     border: 0px;
     transition: 0.75s;
+  }
+
+.moduleButton:hover {
+    background-color: #4245f5;
+    color: white;
+    transition: 0.75s;
+}
+
+.moduleButtonActive:hover {
+  background-color: #4245f5;
+  transition: 0.75s;
 }

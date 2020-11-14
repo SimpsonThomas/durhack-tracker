@@ -20,14 +20,14 @@ function Home() {
 
       <main className={styles.main}>
           <div className={styles.moduleList}>
-            <p>Module List</p>
+            <br/>
             {ModuleList(setModule, moduleSel, currentUser)}
           </div>
           <div className={styles.map}>
             {MapItem(moduleSel)}
           </div>
           <div className={styles.leaderboard}>
-            <p>Leaderboard</p>
+            <br/>
             <Leaderboard/>
           </div>
       </main>

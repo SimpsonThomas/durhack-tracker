@@ -52,7 +52,7 @@ function MapItem(module) {
     
     return (
         <ul className={styles.mapLister}>
-            <b>{module}</b>
+            <center><b>{module}</b></center>
             {
                 modules[module].map( (module, i) => {
                     return(<div>{modulePrinter(i)}</div>)

@@ -12,9 +12,10 @@ function ModuleList(moduleChanger, moduleSel, person) {
 }
 
 function moduleButton(moduleChanger, moduleSel, name) {
+    let style = (moduleSel === name) ? styles.moduleButtonActive : styles.moduleButton 
     return (
         <li key={name} className={styles.moduleButtonList}>
-            <button className={styles.moduleButton} onClick={() => {
+            <button className={style} onClick={() => {
                 moduleChanger(name)
             }}>
                 {name}
