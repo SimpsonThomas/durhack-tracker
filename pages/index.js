@@ -10,7 +10,6 @@ import React, { Component , useState } from "react";
 function Home() {
   const [moduleSel, setModule] = useState('');
   const [currentUser, setUser] = useState('alice');
-  console.log(currentUser)
   return (
     <div className={styles.container}>
       {Navigation(setUser, currentUser)}
