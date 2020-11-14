@@ -20,11 +20,9 @@ export default function Home() {
           </div>
           <div className={styles.map}>
             <p>Map</p>
-            <ModuleList/>
           </div>
           <div className={styles.leaderboard}>
             <p>Leaderboard</p>
-            <ModuleList/>
           </div>
       </main>
 
