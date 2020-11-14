@@ -45,19 +45,16 @@
 .moduleList {
   justify-content: center;
   width: 20%;
-  border: 2px black solid;
 }
 
 .map {
   justify-content: center;
   width: 60vw;
-  border: 2px black solid;
 }
 
 .leaderboard {
   justify-content: center;
   width: 20%;
-  border: 2px black solid;
 }
 
 .card {
