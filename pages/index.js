@@ -8,7 +8,7 @@ import Leaderboard from '../core/leaderboard';
 import React, { Component , useState } from "react";
 
 function Home() {
-  const [moduleSel, setModule] = useState(0);
+  const [moduleSel, setModule] = useState('');
   const [currentUser, setUser] = useState('alice');
   console.log(currentUser)
   return (
@@ -26,9 +26,7 @@ function Home() {
           </div>
           <div className={styles.map}>
             <p>Map</p>
-            {currentUser}
-            {moduleSel}
-            <MapItem/>
+            {MapItem(moduleSel)}
           </div>
           <div className={styles.leaderboard}>
             <p>Leaderboard</p>

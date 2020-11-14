@@ -20,7 +20,6 @@ function navBut(name, setUser, currentUser) {
 
 
 function Navigation(setUser, currentUser) {
-    console.log(people)
     return (
             <nav className={styles.navbar}>
                    
@@ -29,7 +28,6 @@ function Navigation(setUser, currentUser) {
                         {/*Elements that display in the collapsed menu and full width menu*/}
                         <ul className={styles.navbarNav}>
                             {Object.keys(people).map((person) => {
-                                console.log(person)
                                 return(navBut(person, setUser, currentUser))
                             })}
                         </ul>
