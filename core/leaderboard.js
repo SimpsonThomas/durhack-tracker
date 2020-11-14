@@ -1,6 +1,13 @@
 import styles from "../styles/course.module.css"
 
 function Leaderboard() {
+    let message;
+    if (Math.random < 0.8) {
+        message = "You are on track!"
+    }
+    else {
+        message = "You are falling behind!"
+    }
     return (
         <div>
             
@@ -20,9 +27,14 @@ function Leaderboard() {
                         <td>June</td>
                         <td>231</td>
                     </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>186</td>
+                    </tr>
                 </tbody>
                 
             </table>
+            {message}
         </div>
     )
 }
