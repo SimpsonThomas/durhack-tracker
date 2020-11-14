@@ -9,11 +9,11 @@ import React, { Component , useState } from "react";
 
 function Home() {
   const [moduleSel, setModule] = useState(0);
-  const [currentUser, setUser] = useState(0);
+  const [currentUser, setUser] = useState('alice');
   console.log(currentUser)
   return (
     <div className={styles.container}>
-      <Navigation/>
+      {Navigation(setUser, currentUser)}
       <Head>
         <title>Durham Lecture Tracker</title>
         <link rel="icon" href="/durhack.png" />
@@ -22,10 +22,11 @@ function Home() {
       <main className={styles.main}>
           <div className={styles.moduleList}>
             <p>Module List</p>
-            {ModuleList(setModule, moduleSel)}
+            {ModuleList(setModule, moduleSel, currentUser)}
           </div>
           <div className={styles.map}>
             <p>Map</p>
+            {currentUser}
             {moduleSel}
             <MapItem/>
           </div>

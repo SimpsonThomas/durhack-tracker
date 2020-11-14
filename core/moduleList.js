@@ -1,10 +1,10 @@
 import styles from "../styles/course.module.css"
-import { modules } from "./modules"
+import { modules, people } from "./modules"
 
-function ModuleList(moduleChanger, moduleSel) {
+function ModuleList(moduleChanger, moduleSel, person) {
     return (
             <div className={styles.moduleDiv}>
-                {Object.keys(modules).map( (module) => {
+                {people[person].map( (module) => {
                     return( moduleButton(moduleChanger, moduleSel, module) )
                 })}
             </div>

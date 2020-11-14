@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from '../styles/Nav.module.css'
+import { people } from "./modules";
 
 //import Layout from "../components/Layout";
 
@@ -9,22 +10,17 @@ import styles from '../styles/Nav.module.css'
  * @param {*} item - the dictionary containing the name and link of the navbar item we are creating
  * @param {*} navClass - any special classes for this nav-item
  */
-function navBut(item, navClass='') {
+function navBut(name, setUser, currentUser) {
     return (
-        <li className={styles.navBut} key={item.name}>
-            <Link
-                className={navClass+" nav-link "+item.name}
-                id={item.link.split('/')[1]+'NavLink'}
-                to={item.link}
-            >
-                {item.name}
-            </Link>
-        </li>
+        <button className={(name===currentUser) ? styles.navButActive : styles.navBut} key={name} onClick={() => setUser(name)}>
+            {name}
+        </button>
     )
 }
 
 
-function Navigation() {
+function Navigation(setUser, currentUser) {
+    console.log(people)
     return (
             <nav className={styles.navbar}>
                    
@@ -32,14 +28,10 @@ function Navigation() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         {/*Elements that display in the collapsed menu and full width menu*/}
                         <ul className={styles.navbarNav}>
-                            <li className={styles.navBut}>Test</li>
-                            <li className={styles.navBut}>Test</li>
-                            <li className={styles.navBut}>Test</li>
-                            {/*pageList.map(page => {
-                                if (page.nav && page.side === 'left') return this.navBut(page)
-                                else return null
-                            })*/}
-                            &nbsp; {/*Spacer*/}
+                            {Object.keys(people).map((person) => {
+                                console.log(person)
+                                return(navBut(person, setUser, currentUser))
+                            })}
                         </ul>
 
                     </div>
