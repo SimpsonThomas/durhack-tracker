@@ -5,9 +5,9 @@ function MapItem(module) {
     if (module) {
     let moduleLength = modules[module].length
     let x = Math.floor(Math.random() * modules[module].length)
-    let topic = modules[module][x]
 
     function modulePrinter(num) {
+        let topic = modules[module][num]
         console.log(module+' '+num+' '+x)
         let y = Math.floor(Math.random() * 4)
         let check1 = (y>=1) ? styles.checkpointActive : styles.checkpoint
