@@ -16,6 +16,10 @@ function Leaderboard() {
                         <td>Alice</td>
                         <td>354</td>
                     </tr>
+                    <tr>
+                        <td>June</td>
+                        <td>231</td>
+                    </tr>
                 </tbody>
                 
             </table>
