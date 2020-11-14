@@ -5,7 +5,6 @@ function ModuleList(moduleChanger, moduleSel) {
     return (
             <div className={styles.moduleDiv}>
                 {Object.keys(modules).map( (module) => {
-                    console.log(module)
                     return( moduleButton(moduleChanger, moduleSel, module) )
                 })}
             </div>
@@ -14,7 +13,7 @@ function ModuleList(moduleChanger, moduleSel) {
 
 function moduleButton(moduleChanger, moduleSel, name) {
     return (
-        <li className={styles.moduleButtonList}>
+        <li key={name} className={styles.moduleButtonList}>
             <button className={styles.moduleButton} onClick={() => {
                 moduleChanger(name)
             }}>

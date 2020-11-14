@@ -9,10 +9,8 @@ import React, { Component , useState } from "react";
 
 function Home() {
   const [moduleSel, setModule] = useState(0);
-  function moduleChanger(newMod) {
-    setModule(newMod)
-  }
-  console.log(moduleSel)
+  const [currentUser, setUser] = useState(0);
+  console.log(currentUser)
   return (
     <div className={styles.container}>
       <Navigation/>
@@ -24,7 +22,7 @@ function Home() {
       <main className={styles.main}>
           <div className={styles.moduleList}>
             <p>Module List</p>
-            {ModuleList(moduleChanger, moduleSel)}
+            {ModuleList(setModule, moduleSel)}
           </div>
           <div className={styles.map}>
             <p>Map</p>
