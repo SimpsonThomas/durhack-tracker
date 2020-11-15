@@ -18,7 +18,7 @@ export const modules = {
 
 
 export const people = {
-    'Alice' : ['Linear Algebra', 'Calculus', 'Foundations of Physics'],
-    'Bob' : ['Linear Algebra', 'Calculus', 'Algebra II'],
-    'June' : ['Linear Algebra', 'Calculus', 'Complex Analysis']
+    'alice' : ['Linear Algebra', 'Calculus', 'Foundations of Physics'],
+    'bob' : ['Linear Algebra', 'Calculus', 'Algebra II'],
+    'june' : ['Linear Algebra', 'Calculus', 'Complex Analysis']
 }

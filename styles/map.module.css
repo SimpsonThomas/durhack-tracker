@@ -28,3 +28,8 @@
 .started .mapList {
     color: red;
 }
+
+.lecturer {
+    text-decoration: underline overline #8142f5;
+    
+}
