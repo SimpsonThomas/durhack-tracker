@@ -8,7 +8,6 @@ function MapItem(module) {
 
     function modulePrinter(num) {
         let topic = modules[module][num]
-        console.log(module+' '+num+' '+x)
         let y = Math.floor(Math.random() * 4)
         let check1 = (y>=1) ? styles.checkpointActive : styles.checkpoint
         let check2 = (y>=2) ? styles.checkpointActive : styles.checkpoint

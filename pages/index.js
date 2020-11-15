@@ -28,7 +28,7 @@ function Home() {
           </div>
           <div className={styles.leaderboard}>
             <br/>
-            <Leaderboard/>
+            {Leaderboard(currentUser)}
           </div>
       </main>
 

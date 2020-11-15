@@ -1,12 +1,18 @@
 import styles from "../styles/course.module.css"
 
-function Leaderboard() {
+function Leaderboard(user) {
     let message;
-    if (Math.random < 0.8) {
-        message = "You are on track!"
+    let x = Math.random()
+    console.log(x)
+    console.log(x<=0.7)
+    if (x < 0.5) {
+        message = " You are on track! Keep going as you have been!"
+    }
+    else if (x<0.6) {
+        message = " You could probably do with moving through the content a little faster"
     }
     else {
-        message = "You are falling behind!"
+        message = " You are falling behind! Try finishin some more lectures and doing a few tests"
     }
     return (
         <div>
@@ -34,7 +40,8 @@ function Leaderboard() {
                 </tbody>
                 
             </table>
-            {message}
+            <br/>
+            <b> {user}</b>{message}
         </div>
     )
 }
