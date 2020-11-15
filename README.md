@@ -1,30 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Just a brief explanation about what our app aims to do
 
-## Getting Started
+## Problem
+With online lectures often being asyncronous and not matching directly with traditional lecture slots students can lose track of where they are meant to be
 
-First, run the development server:
+They often find it hard to keep up across all their modules simply because they don't understand how the content is ordered
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Aims
+To provide an interface to track your progress through an online course
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To show where the lecturer expects you to be at in the course
 
-## Learn More
+To show where the average student has got to
 
-To learn more about Next.js, take a look at the following resources:
+To allow you to mark lecturers watched, complete online tests to confirm understanding
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To gamify these features to make it enjoyable for the student
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## What we've achieved
+We haven't managed to create the complete interface - more a design mock-up for the end product built in Next.js running on AWS Amplify
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can choose mock students, see their randomly generated progress in some modules
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The green marks where the student has reached
+
+The under and over lined section is where the lecturer expects the student to be
+
+We also have a leaderboard, again with stub data, to show the gamification features we hope to build
+
+
+## What we want to do
+Ideally this would be built directly into DUO to allow it to automatically sync with watched lecturers, recieve formative and summative marks from assignments to allow students the simplest possible experience
