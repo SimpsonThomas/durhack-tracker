@@ -1,0 +1,30 @@
+.mapList {
+    list-style: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mapLister {
+    list-style: none;
+}
+
+.checkpoint {
+    list-style: none;
+    font-style: italic;
+    text-align: center;
+}
+
+.active .mapList {
+    color: green;
+}
+
+.checkpointActive {
+    color: #53a800;
+    list-style: none;
+    font-style: italic;
+    text-align: center;
+}
+
+.started .mapList {
+    color: red;
+}
