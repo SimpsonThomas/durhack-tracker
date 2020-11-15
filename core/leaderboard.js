@@ -4,17 +4,17 @@ function Leaderboard(user) {
     let message;
     let x = Math.random()
     if (x < 0.5) {
-        message = " You are on track! Keep going as you have been!"
+        message = " you are on track! Keep going as you have been!"
     }
     else if (x<0.6) {
-        message = " You could probably do with moving through the content a little faster"
+        message = " you could probably do with moving through the content a little faster"
     }
     else {
-        message = " You are falling behind! Try finishing some more lectures and doing a few tests"
+        message = " you are falling behind! Try finishing some more lectures and doing a few tests"
     }
     return (
         <div>
-            
+            <center>
             <table>
                 <thead>
                     <tr>
@@ -40,6 +40,7 @@ function Leaderboard(user) {
             </table>
             <br/>
             <b> {user}</b>{message}
+            </center>
         </div>
     )
 }
