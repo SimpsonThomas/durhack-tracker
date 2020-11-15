@@ -14,7 +14,7 @@ function Leaderboard(user) {
     }
     return (
         <div>
-            
+            <center>
             <table>
                 <thead>
                     <tr>
@@ -40,6 +40,7 @@ function Leaderboard(user) {
             </table>
             <br/>
             <b> {user}</b>{message}
+            </center>
         </div>
     )
 }

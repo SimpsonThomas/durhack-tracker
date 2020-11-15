@@ -49,7 +49,7 @@
 
 .map {
   justify-content: center;
-  width: 60vw;
+  width: 58vw;
   max-height: calc(100vh - 125px);
   overflow: auto;
 }
