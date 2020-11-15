@@ -19,24 +19,38 @@ function navBut(name, setUser, currentUser) {
 }
 
 
-function Navigation(setUser, currentUser) {
-    return (
-            <nav className={styles.navbar}>
-                   
+function Navigation(setUser, currentUser, home=true) {
+    if (home) {
+        return (
+                <nav className={styles.navbar}>
                     
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        {/*Elements that display in the collapsed menu and full width menu*/}
-                        <ul className={styles.navbarNav}>
-                            {Object.keys(people).map((person) => {
-                                return(navBut(person, setUser, currentUser))
-                            })}
-                        </ul>
+                        
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className={styles.navbarNav}>
+                                {Object.keys(people).map((person) => {
+                                    return(navBut(person, setUser, currentUser))
+                                })}
+                            
+                                <li className={styles.navBut}><Link href="/help" className={styles.navLink}>Help</Link></li>
+                            </ul>
+                        </div>
 
+
+                </nav>
+        )
+    } else {
+        return (
+            <nav className={styles.navbar}>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className={styles.navbarNav}>
+                            <li className={styles.navBut}><Link href="/" className={styles.navLink}>Home</Link></li>
+                        </ul>
                     </div>
 
 
             </nav>
         )
+    }
 }
 
 export default Navigation

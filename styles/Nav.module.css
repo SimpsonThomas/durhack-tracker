@@ -58,3 +58,19 @@
     margin: 0;
     padding: 0;
   }
+
+.navLink {
+  background-color: red;
+  list-style: none;
+  background-color: transparent;
+  text-emphasis-style: bold;
+  color: white;
+  display: inline;
+  transition: 0.75s background-color;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 0;
+  border-radius: 20%;
+  font-weight: bolder;
+}
