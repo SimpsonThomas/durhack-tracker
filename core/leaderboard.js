@@ -12,7 +12,7 @@ function Leaderboard(user) {
         message = " You could probably do with moving through the content a little faster"
     }
     else {
-        message = " You are falling behind! Try finishin some more lectures and doing a few tests"
+        message = " You are falling behind! Try finishing some more lectures and doing a few tests"
     }
     return (
         <div>
