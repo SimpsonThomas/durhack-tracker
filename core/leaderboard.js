@@ -3,8 +3,6 @@ import styles from "../styles/course.module.css"
 function Leaderboard(user) {
     let message;
     let x = Math.random()
-    console.log(x)
-    console.log(x<=0.7)
     if (x < 0.5) {
         message = " You are on track! Keep going as you have been!"
     }
