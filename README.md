@@ -1,6 +1,6 @@
 ## Try it out
 
-You can check it out on our instances running on AWS Amplify - [Dev](https://dev.d3jn2is8vx7q5l.amplifyapp.com/) and [Master](https://dev.d3jn2is8vx7q5l.amplifyapp.com/) - both have their own instances.
+You can check it out on our instances running on AWS Amplify - [Dev](https://dev.d3jn2is8vx7q5l.amplifyapp.com/) and [Master](https://master.d3jn2is8vx7q5l.amplifyapp.com/) - both have their own instances.
 
 You can look at our code on Github [here](https://github.com/SimpsonThomas/durhack-tracker)
 
@@ -41,10 +41,10 @@ We also have a leader board, again with stub data, to show the gamification feat
 
 ## Sponsor Prize Eligibility
 
-###Make it AWSome! (AWS)
+### Make it AWSome! (AWS)
 We used two instances running on AWS Amplify; one for tracking progress on the dev branch, and one for hosting the polished master branch.
 
-###Improve Online Learning (DU CompSoc)
+### Improve Online Learning (DU CompSoc)
 The project need largely comes from the move to online learning. Our hack improves online learning by making it more exciting, competitive and rewarding.
 
 ## What we still want to do
