@@ -1,5 +1,12 @@
 Just a brief explanation about what our app aims to do
 
+You can check it our by running it locally with 
+``` npm run dev
+```
+And going to [http://localhost:3000](http://localhost:3000) in your browser
+
+You can also check it out on our instances running on AWS Amplify - [Dev](https://dev.d3jn2is8vx7q5l.amplifyapp.com/) and [Master](https://dev.d3jn2is8vx7q5l.amplifyapp.com/) both have their own instances
+
 ## Problem
 With online lectures often being asyncronous and not matching directly with traditional lecture slots students can lose track of where they are meant to be
 
